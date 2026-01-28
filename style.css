@@ -1,0 +1,91 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.container{
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 , 0 , 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+input#taskinput{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 12px;
+}
+
+button#addtaskbtn{
+     
+    display: block;          
+    margin: 12px auto 0;    
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+
+
+}
+button#addtaskbtn:hover{
+    background-color: #0056b3;
+}
+ul#tasklist{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+ul#tasklist li{
+     padding: 10px 8px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ul#tasklist li button {
+    color: red;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+} 
+ul#tasklist li button:hover {
+    color: darkred;
+}
+
+ul#tasklist li.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    input#taskinput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button#addtaskbtn {
+        width: 100%;
+    }
+}
